@@ -1,0 +1,8 @@
+.env
+__pycache__/
+venv/
+.env.local
+*.pyc
+node_modules/
+pgdata/
+
