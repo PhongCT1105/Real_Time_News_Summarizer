@@ -1,0 +1,13 @@
+from pydantic_settings import BaseSettings  # correct in v2
+
+class Settings(BaseSettings):
+    POSTGRES_HOST: str = "localhost"
+    POSTGRES_PORT: int = 5432
+    POSTGRES_USER: str = "user"
+    POSTGRES_PASSWORD: str = "password"
+    POSTGRES_DB: str = "database"
+
+    class Config:
+        env_file = ".env"
+
+settings = Settings()
